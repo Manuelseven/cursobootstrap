@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso bootstrap</title>
+
+    <link rel="stylesheet" 
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+          crossorigin="anonymous">
+          <link rel="shortcut icon" href="img/icoHTML5.ico" type="image/x-icon">
+
+          <style>
+              .scrollspySite {
+
+                position: relative;
+                overflow: auto;
+                height: 345px;
+
+              }
+              
+          </style>
+
+          <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+        <a class="navbar-brand h1 mb-0" href="">Curso</a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-targete="#navbarSite">
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+       
+         <div class="collapse navbar-collapse" id="navbarSite">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-itens">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-itens">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-itens">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-itens">
+                    <a class="nav-link" href="#">Depoimentos</a>
+                </li>
+                <li class="nav-itens">
+                    <a class="nav-link" href="#">Contatos</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggler="dropdown" id="navDrop">
+                 Social
+              </a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Facebook</a>
+                  <a class="dropdown-item" href="#">Twitter</a>
+                  <a class="dropdown-item" href="#">Instagram</a>
+
+              </div>
+                </li>
+
+            </ul>
+          <form class="form-inline">
+              <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+              <button class="btn-dark" type="submit">Ok</button>
+          </form>
+         </div>
+        </div>
+            </nav>
+
+            <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+             <ol class="carousel-indicators">
+                 <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+                 <li data-target="#carouselSite" data-slide-to="1"></li>
+                 <li data-target="#carouselSite" data-slide-to="2"></li>
+             </ol>
+
+                <div class="carousel-inner"> 
+
+                    <div class="carousel-item active"> 
+                        <img src="img/imgteste.png" class="img-fluid d-block">
+                        
+                        <div class="carousel-caption d-none d-md-block text-dark">
+
+                       <h1>Eu amo esse texto lindo</h>
+                       <p class="lead">Esse site é um site muito incrível</p>
+
+                        </div>
+
+                    </div>
+                    <div class="carousel-item"> 
+                        <img src="img/imgteste2.png" class="img-fluid d-block">
+
+                        <div class="carousel-caption d-none d-md-block text-dark">
+
+                            <h1>Eu amo esse texto lindo</h1>
+                            <p class="lead">Esse site é um site muito incrível</p>
+     
+                             </div>
+
+                    </div>
+                    <div class="carousel-item"> 
+                        <img src="img/imagem correta.png" class="img-fluid d-block">
+
+                        <div class="carousel-caption d-none d-md-block text-dark">
+
+                            <h1>Eu amo esse texto lindo</h1>
+                            <p class="lead">Esse site é um site muito incrível</p>
+     
+                             </div>
+
+                    </div>
+                </div>
+                
+                <a class="carousel-control-prev" href= "#carouselSite" role="button" data-slide="prev">
+
+               <span class="carousel-control-prev-icon"></span>
+               <span class="sr-only">Anterior</span>
+            
+                </a>
+                <a class="carousel-control-next" href= "#carouselSite" role="button" data-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Avançar</span>
+                </a>
+
+            </div>
+
+            <div class="container">
+<div class="row">
+
+<div class="col-12 text-center my-5">
+    
+    <h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i> Seja bem vindo</h1>
+    <p>Seja muito bem vindo a este estabelecimento</p>
+
+</div>
+
+</div>
+
+<div class="row mb-5">
+
+    <div class="col-sm-6 col-md-4 md-3">
+
+<nav id="navbarVertical" class="navbar navbar-light bg-light">
+
+    <nav class="nav nav-pills flex-column">
+
+        <a class="nav-link" href="#item1">Belo Site</a>
+
+        <nav class="nav nav-pills flex-columns">
+
+            <a class="nav-link ml-3" href="#item1-1">Belo Site</a>
+
+            <a class="nav-link ml-3" href="#item1-2">Todos os produtos</a>
+
+
+
+        </nav>
+
+        <a class="nav-link my2" href="#item2">Excelentes produtos</a>
+
+        <a class="nav-link my-2" href="#item3">Preços baratos</a>
+
+        <nav class="nav nav-pills flex-columns">
+
+            <a class="nav-link ml-3" href="#item3-1">Nunc eget</a>
+
+            <a class="nav-link ml-3" href="#item3-2">Ut eu consectetur</a>
+
+
+
+
+
+    </nav>
+
+
+
+</nav>
+
+    </div>
+
+    <div class="col-sm-6 col-md-8">
+
+        <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+
+            <h4 id="item1">Descrição do produto</h4>
+            <p>Esse computador é um excelente artigo de informática e possui uma das tecnologias mais avançadas</p>
+
+            <h5 id="item1-1">Ficha técnica</h5>
+            <p>Hd de última geração e automatizada com os melhores display do mercado</p>
+
+            <h5 id="item1-2">Tendencia de mercado</h5>
+            <p>Por ser uma tendencia de mercado esse computador terá uma vida util muito superior a sua concorrencia</p>
+
+            <h4 id="item2">Descrição do produto</h4>
+            <p>Esse computador é um excelente artigo de informática e possui uma das tecnologias mais avançadas</p>
+            
+            <h4 id="item3">Descrição do produto</h4>
+            <p>Esse computador é um excelente artigo de informática e possui uma das tecnologias mais avançadas</p>
+
+            <h5 id="item3-1">Ficha técnica</h5>
+            <p>Hd de última geração e automatizada com os melhores display do mercado</p>
+
+            <h5 id="item3-2">Tendencia de mercado</h5>
+            <p>Por ser uma tendencia de mercado esse computador terá uma vida util muito superior a sua concorrencia</p>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <div class="row justify-content-sm-center">
+
+           <div class="col-sm-6 col-md-4">                                                                                                                                             
+            <div class="card mb-5">
+                 
+                <img class="card-img-top" src="img/5.000.png">
+                <div class="card-body">
+                    <h4 class="card-title">Temos todos os produtos</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Acesse seus produtos favoritos</h6>
+                   <p class="card-text">Esses produtos são os mehores produtos da reagião.</p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Diversos produtos</li>
+                    <li class="list-group-item">Vários itens</li>
+                    <li class="list-group-item">Excelentes promoções</li>
+                </ul>
+                   <div class="card-body">
+                   <a href="#" class="card-link">Acessar</a>
+                   <a href="#" class="card-link">Saiba mais</a>
+                   <div class="card-footer text-muted">
+                       Voltar ao menu
+                   </div>
+
+                </div>
+
+            </div>
+
+           </div>
+
+           <div class="col-sm-6 col-md-4">
+
+            <div class="card mb-5">
+                 
+                <img class="card-img-top" src="img/amarelo1.png">
+                <div class="card-body">
+                    <h4 class="card-title">Temos todos os produtos</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Acesse seus produtos favoritos</h6>
+                   <p class="card-text">Esses produtos são os mehores produtos da reagião.</p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Diversos produtos</li>
+                    <li class="list-group-item">Vários itens</li>
+                    <li class="list-group-item">Excelentes promoções</li>
+                </ul>
+
+                   <div class="card-body">
+                   <a href="#" class="card-link">Acessar</a>
+                   <a href="#" class="card-link">Saiba mais</a>
+                   <div class="card-footer text-muted">
+                    Voltar ao menu
+                </div>
+
+                </div>
+
+            </div>
+
+
+           </div>
+
+           <div class="col-sm-6 col-md-4">
+
+            <div class="card mb-5">
+                 
+                <img class="card-img-top" src="img/5.2.png">
+                <div class="card-body">
+                    <h4 class="card-title">Temos todos os produtos</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Acesse seus produtos favoritos</h6>
+                   <p class="card-text">Esses produtos são os mehores produtos da reagião.</p>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Diversos produtos</li>
+                    <li class="list-group-item">Vários itens</li>
+                    <li class="list-group-item">Excelentes promoções</li>
+                </ul>
+                   <div class="card-body">
+                   <a href="#" class="card-link" data-toggler="modal" data-target="#siteModal">Acessar</a>
+                   <a href="#" class="card-link">Saiba mais</a>
+                   <div class="card-footer text-muted">
+                    Voltar ao menu
+                </div>
+
+                </div>
+
+            </div>
+
+           </div>
+      </div>
+<div class="jumbotron jumbotron-fluid">
+
+    <div class="container">
+
+        <div class="row">
+
+         <div class="col-12 text-center">
+
+            <h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i> Grandes promoções</h1>
+            <p class="lead">Esses produtos são os melhores do mercado</p>
+            <hr>
+
+         </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <ul class="nav nav-pills justify-content-sm-center mb-4" id="pills-nav" role="tablist">
+              
+                 <li nav-item>
+
+                    <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item01">Pellentesque</a>
+
+                 </li>
+                 <li nav-item>
+
+                    <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item02">Compre agora</a>
+
+                 </li>
+
+                 <li nav-item>
+
+                    <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item03">Faça sua reserva</a>
+
+                 </li>
+                </ul>
+
+                <div class="tab-content" id="nav-pills-content">
+
+                    <div class="tab-pane fade show active" id="nav-item01" role="tabpanel">
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jM8M_xgKbrc"></iframe>
+                                </div>
+
+                            </div>
+
+                         <div class="col-sm-6">
+
+                           <p>Music</p>
+
+                         </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-item02" role="tabpanel">
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jM8M_xgKbrc"></iframe>
+                                </div>
+
+                            </div>
+
+                         <div class="col-sm-6">
+
+                           <p>Music</p>
+
+                         </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-item03" role="tabpanel">
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jM8M_xgKbrc"></iframe>
+                                </div>
+
+                            </div>
+
+                         <div class="col-sm-6">
+
+                           <p>Music</p>
+
+                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+        </div>
+
+        <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 text-center my-5">
+
+             <h1 class="display-4"><i class="fa fa-plane text-primary" aria-hidden="true"></i> Nossos produtos</h1>
+
+
+            </div>
+
+
+        </div>
+
+         <div class="row justify-content-center mb-5">
+
+             <div class="col-sm-12 col-md-10 col-lg-8">
+
+                <form>
+
+             <div class="form-row">
+
+              <div class="form-group col-sm-6">
+
+                <label for="inputNome">Seu nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+            </div>
+
+
+                  <div class="fora-group col-sm-6">
+
+                    <label for="inputSobrenome">Seu sobrenome</label>
+                    <input type="text" class="form-control" id="inputSobrenme" placeholder="Sobrenome">
+
+               </div>
+
+               <div class="form-group">
+
+                <label for="inputEnd">Seu Endereço</label>
+                <input type="text" class="form-control" id="inputEnd" placeholder="Endereço Completo">
+
+
+               </div>
+
+               <div class="form-group col-sm-6">
+
+                <label for="inputCidade">Sua cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+
+               </div>
+
+               <div class="form-group col-sm-4">
+
+                <label for="inputEst">Seu estado</label>
+                 <select id="inputEst" class="form-control">
+                  <option selected>Escolha...</option>
+                   <option>SP</option>
+                   <option>SE</option>
+                   <option>BA</option>
+                 </select>
+
+               </div>
+
+              <div class="form-group col-sm-2">
+
+              </div>
+
+             </div>
+
+                </form>
+
+             </div>
+
+
+         </div>
+
+        </div>
+
+        <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Compre com segurança</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                         <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid"></div>
+                        <p>Esses são os melhores produtos do mercado de tecnologia de que temos acesso e que disponibilizamos para a sua compra.</p>
+                    
+                       <div class="modal-body">
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <h5>Atenção</h5>
+                                <p>Os melhores produtos</p>
+
+                            </div>
+
+                            <div class="col-6">
+                                <h5>Atenção</h5>
+                                <p>Os melhores produtos</p>
+
+                            </div>
+
+
+                        </div>
+
+
+                       </div>
+
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
+        crossorigin="anonymous"></script>
+</body>
+</html>
